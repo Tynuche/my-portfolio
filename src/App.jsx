@@ -230,7 +230,7 @@ export default function Portfolio(){
   const [skillsFired,setSkFired]=useState(false);
   const skillRef=useRef(null);
   const T=isDark?DARK:LIGHT;
-  const typed=useTyper(["QA Engineer","Masters Researcher","Data Analyst","Technical Writer"]);
+  const typed=useTyper(["Software Developer","IT Technician","Masters Research Student"]);
 
   useEffect(()=>{
     const el=document.createElement("style");
@@ -458,7 +458,7 @@ export default function Portfolio(){
 
           <div style={{display:"flex",flexWrap:"wrap",gap:8,marginBottom:32,
             animation:"fadeUp .9s ease .56s both"}}>
-            {["🌍 Benoni, Gauteng ZA","🎓 UNISA MIT","⚡ Open to Work"].map(tag=>(
+            {["🎓 UNISA MIT","🏢 Currently employed at Moyo"].map(tag=>(
               <span key={tag} style={{padding:"5px 14px",border:`1px solid ${T.border}`,
                 ...mono,fontSize:9.5,color:T.textMid,letterSpacing:.6,
                 transition:trans}}>{tag}</span>
@@ -468,7 +468,7 @@ export default function Portfolio(){
           <p style={{color:T.textMid,fontSize:14.5,lineHeight:1.88,maxWidth:490,
             marginBottom:42,animation:"fadeUp .9s ease .64s both"}}>
             IT professional at the intersection of{" "}
-            <span style={{color:T.violet}}>quality assurance engineering</span> and
+            <span style={{color:T.violet}}>software engineering</span> and
             academic research into{" "}
             <span style={{color:T.green}}>generative AI adoption</span> frameworks
             for South African SMEs.
@@ -544,8 +544,8 @@ export default function Portfolio(){
               <span style={{color:T.violet}}>const</span>{" "}
               <span style={{color:T.green}}>tinashe</span>{" "}
               <span style={{color:T.text}}>=</span>{" "}<span style={{color:T.text}}>{"{"}</span><br/>
-              {[["location","Benoni, Gauteng ZA"],["university","UNISA"],
-                ["program","MIT (Masters IT)"],["status","Open to Opportunities"]].map(([k,v])=>(
+              {[["University","UNISA"],
+                ["Program","MIT (Masters in Information Technology)"],["Status","Currently Employed"]].map(([k,v])=>(
                 <span key={k} style={{display:"block",paddingLeft:18}}>
                   <span style={{color:T.blue}}>{k}</span>
                   <span style={{color:T.text}}>: </span>
@@ -560,7 +560,7 @@ export default function Portfolio(){
             <div className="reveal" style={{display:"grid",
               gridTemplateColumns:"1fr 1fr",gap:11}}>
               {[["42+","Test Cases","⬡",T.violet],["3+","Years in IT","◈",T.green],
-                ["2028","Masters Target","⊹",T.gold],["5","Research Pillars","✦",T.blue]].map(([n,l,ic,c])=>(
+                ["2027","Masters Target","⊹",T.gold],["5","Research Pillars","✦",T.blue]].map(([n,l,ic,c])=>(
                 <div key={l} style={{background:T.bgCard,border:`1px solid ${T.border}`,
                   padding:"22px 16px",position:"relative",overflow:"hidden",
                   transition:"border-color .3s"}}
